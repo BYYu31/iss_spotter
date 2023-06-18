@@ -9,13 +9,13 @@ const { fetchMyIP,fetchCoordsByIP, fetchISSFlyOverTimes, nextISSTimesForMyLocati
 //   console.log('It worked! Returned IP:' , ip);
 // });
 
-// fetchCoordsByIP('162.218.124.121', (err, coord) => {
-//   if (err) {
-//     console.log(`It didn't work!`, err);
-//     return;
-//   }
-//   console.log(`It worked! Returned coordinates:`, coord);
-// });
+fetchCoordsByIP('162.218.124.121', (err, coord) => {
+  if (err) {
+    console.log(`It didn't work!`, err);
+    return;
+  }
+  console.log(`It worked! Returned coordinates:`, coord);
+});
 
 // fetchISSFlyOverTimes({ latitude: '49.27670', longitude: '-123.13000' }, (err, flyover) => {
 //   if (err) {
